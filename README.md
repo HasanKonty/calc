@@ -6,7 +6,7 @@ buttons should input numbers and functions should be called according to signs p
 
 plan: 
 
-*** build html layout 
+*** build html layout  ✅
 
 *** make the styles :
     - center the calculator on screen
@@ -16,4 +16,12 @@ plan:
     - pick the colors " black and grey shades mostly"
 
 *** make the script
-        to be thought about later...
+        create calculation functions to: 
+        - add
+        -subtract
+        -multiply
+        -divide
+
+        create variables for operations "number operator number"
+
+        create a function that takes the numbers and operators and calls one of the calculation functions
