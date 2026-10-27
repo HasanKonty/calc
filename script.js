@@ -49,7 +49,7 @@ buttons.forEach(button => {
         c = "";
     } else if ( button.id === "equal") {
         //call the operate function
-        // how to make the above also appear in the calculator screen...
+    
         //adjust the multiply sign in html 
 
     }
