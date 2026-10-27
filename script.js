@@ -35,9 +35,28 @@ buttons.forEach(button => {
     button.addEventListener("click", () => {
         const buttonPressed = button.textContent;
 
-    if
-    })
+    if (button.classList.contains("digit")) {
+        if ( c ==="") {
+            a += button.textContent;
+        }else {
+            b += button.textContent;
+        }
+    } else if (button.classList.contains("operator")) {
+        c = button.textContent;
+    } else if ( button.id === "clear"){
+        a = "";
+        b = "";
+        c = "";
+    } else if ( button.id === "equal") {
+        //call the operate function
+        // how to make the above also appear in the calculator screen...
+        //adjust the multiply sign in html 
+
+    }
+
+    });
 })
+
 
 
 // let b = Number(n2);
