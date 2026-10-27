@@ -54,6 +54,9 @@ buttons.forEach(button => {
 
     }
 
+    const screen = document.querySelector("#screen");
+    screen.textContent = a + c + b;
+
     });
 })
 
