@@ -48,9 +48,12 @@ buttons.forEach(button => {
         b = "";
         c = "";
     } else if ( button.id === "equal") {
+        const result = operate(Number(a), Number(b), c);
+             a = string(result);
+             b = "";
+             c = "";
+
         //call the operate function
-    
-        //adjust the multiply sign in html 
 
     }
 
