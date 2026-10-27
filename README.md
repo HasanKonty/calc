@@ -16,12 +16,12 @@ plan:
     - pick the colors " black and grey shades mostly"
 
 *** make the script
-        create calculation functions to: 
-        - add
-        -subtract
-        -multiply
-        -divide
+        create calculation functions to: ✅
+        - add✅
+        -subtract✅
+        -multiply✅
+        -divide✅
 
-        create variables for operations "number operator number"
+        create variables for operations "number operator number" done but not sure...
 
-        create a function that takes the numbers and operators and calls one of the calculation functions
+        create a function that takes the numbers and operators and calls one of the calculation functions✅

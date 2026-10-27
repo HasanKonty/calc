@@ -6,11 +6,7 @@ const multiply = (a ,b) => a * b;
 
 const divide = (a , b) => a / b;
 
-let a = Number(n1);
 
-let b = Number(n2);
-
-let c = operator;
 
 const operate = (a, b, c) => {
     if (c === "+") {
@@ -28,3 +24,22 @@ const operate = (a, b, c) => {
     
     
 }
+
+let a = "";
+let b = "";
+let c = "";
+
+const buttons = document.querySelectorAll("button");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const buttonPressed = button.textContent;
+
+    if
+    })
+})
+
+
+// let b = Number(n2);
+
+// let c = operator;
