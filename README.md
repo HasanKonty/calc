@@ -22,6 +22,12 @@ plan:
         -multiply✅
         -divide✅
 
-        create variables for operations "number operator number" done but not sure...
+        create variables for operations "number operator number" done but not sure...✅
 
         create a function that takes the numbers and operators and calls one of the calculation functions✅
+
+        make numbers appear on screen ✅
+
+        make equal call the operate function and display result on screen ✅
+
+        
