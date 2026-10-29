@@ -37,20 +37,27 @@ buttons.forEach(button => {
         const buttonPressed = button.textContent;
 // if button pressed is a digit
     if (button.classList.contains("digit")) {
-        if ( c ==="") {//if no operator pressed
-            a += button.textContent;//put it in a
-        }else {//if operator pressed
-            b += button.textContent;//put it in b
+        //if no operator pressed
+        if ( c ==="") {
+            //put it in a
+            a += button.textContent;
+            //if operator pressed
+        }else {
+            //put it in b
+            b += button.textContent;
         }
-        // if button pressed is an operator put it in c
+
+        // if button pressed is an operator
     } else if (button.classList.contains("operator")) {
-        if (c !=="") {// if an operator is pressed before
+        // if an operator is pressed before equal and there was a number input before
+        if (c !=="" && b !== "") {
              //make a constant to store the result of operate
         const result = operate(Number(a), Number(b), c);
         // show result in a
             a = String(result);
             b = "";
         } 
+        // put button pressed in c
         c = button.textContent;
 
         //if button pressed is clear, clear a b c 
