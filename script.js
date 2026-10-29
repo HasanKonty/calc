@@ -29,6 +29,8 @@ const operate = (a, b, c) => {
 let a = "";
 let b = "";
 let c = "";
+// set a variable to know if a calculation is finished or not
+let justEvaluated = false;
 //create the constant buttons
 const buttons = document.querySelectorAll("button");
 //for each button click
@@ -37,6 +39,12 @@ buttons.forEach(button => {
         const buttonPressed = button.textContent;
 // if button pressed is a digit
     if (button.classList.contains("digit")) {
+        // if calculation was finished
+        if (justEvaluated){
+            //clear a and declare calculation is not finished
+            a = "";
+            justEvaluated = false;
+        }
         //if no operator pressed
         if ( c ==="") {
             //put it in a
@@ -49,6 +57,8 @@ buttons.forEach(button => {
 
         // if button pressed is an operator
     } else if (button.classList.contains("operator")) {
+        //declare a calculation is not finished
+        justEvaluated = false;
         // if an operator is pressed before equal and there was a number input before
         if (c !=="" && b !== "") {
              //make a constant to store the result of operate
@@ -60,11 +70,13 @@ buttons.forEach(button => {
         // put button pressed in c
         c = button.textContent;
 
-        //if button pressed is clear, clear a b c 
+        //if button pressed is clear, clear a b c and calculation not finished
     } else if ( button.id === "clear"){
         a = "";
         b = "";
         c = "";
+        justEvaluated = false;
+
         // if button pressed is equal
     } else if ( button.id === "equal") {
         
@@ -84,6 +96,8 @@ buttons.forEach(button => {
              b = "";
              c = "";
         }
+        //set calculation to finished
+        justEvaluated = true;
 
     }
 }

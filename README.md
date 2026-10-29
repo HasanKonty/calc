@@ -38,7 +38,7 @@ plan:
 
 //          pressing operator repeatedly doesn't keep operating but keep last number displayed and only use it when second number is entered ✅
 
-//          when result is displayed and a new number is entered.. result is cleared and new number appear.
+//          when result is displayed and a new number is entered.. result is cleared and new number appear. ✅
 
 //          
 
