@@ -63,12 +63,20 @@ buttons.forEach(button => {
         
         //if input is not empty
         if(a !== "" && b !== "" && c !== ""){
+        
         //make a constant to store the result of operate
         const result = operate(Number(a), Number(b), c);
-        //make a the rusult to show on screen
+        //display error if dividing by zero
+        if(c === "/" && Number(b) === 0) {
+            a = "NOT ALLOWED!!!";
+            b = "";
+            c = "";
+        } else{
+        //make a the result to show on screen
              a = String(result.toFixed(2));
              b = "";
              c = "";
+        }
 
     }
 }
