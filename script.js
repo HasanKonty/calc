@@ -60,6 +60,9 @@ buttons.forEach(button => {
         c = "";
         // if button pressed is equal
     } else if ( button.id === "equal") {
+        
+        //if input is not empty
+        if(a !== "" && b !== "" && c !== ""){
         //make a constant to store the result of operate
         const result = operate(Number(a), Number(b), c);
         //make a the rusult to show on screen
@@ -67,9 +70,8 @@ buttons.forEach(button => {
              b = "";
              c = "";
 
-        //call the operate function
-
     }
+}
 //screen shows a c b "number operator number" or" result empty empty"
     const screen = document.querySelector("#screen");
     screen.textContent = a + c + b;
