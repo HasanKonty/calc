@@ -8,12 +8,6 @@ plan:
 
 *** build html layout  ✅
 
-*** make the styles :
-    - center the calculator on screen
-    - put a border around the calculator
-    - make the buttons evenly spaced
-    - make the buttons round
-    - pick the colors " black and grey shades mostly"
 
 *** make the script
         create calculation functions to: ✅
@@ -31,3 +25,19 @@ plan:
         make equal call the operate function and display result on screen ✅
 
         
+// to do: 
+//          round answers
+//          pressing = before everything is entered doesn't cause problems
+//          pressing clear wipes out everything
+//          display error if divide by 0
+//          pressing operator repeatedly doesn't keep operating but keep last number displayed and only use it when second number is entered
+//          when result is displayed and a new number is entered.. result is cleared and new number appear.
+//          
+
+
+*** make the styles :
+    - center the calculator on screen
+    - put a border around the calculator
+    - make the buttons evenly spaced
+    - make the buttons round
+    - pick the colors " black and grey shades mostly"

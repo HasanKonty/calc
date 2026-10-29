@@ -63,14 +63,14 @@ buttons.forEach(button => {
         //make a constant to store the result of operate
         const result = operate(Number(a), Number(b), c);
         //make a the rusult to show on screen
-             a = String(result);
+             a = String(Math.round(result));
              b = "";
              c = "";
 
         //call the operate function
 
     }
-//screen shows a c b "number opertor number" or" result empty empty"
+//screen shows a c b "number operator number" or" result empty empty"
     const screen = document.querySelector("#screen");
     screen.textContent = a + c + b;
 
@@ -79,6 +79,3 @@ buttons.forEach(button => {
 
 
 
-// let b = Number(n2);
-
-// let c = operator;
