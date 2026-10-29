@@ -63,7 +63,7 @@ buttons.forEach(button => {
         //make a constant to store the result of operate
         const result = operate(Number(a), Number(b), c);
         //make a the rusult to show on screen
-             a = String(Math.round(result));
+             a = String(result.toFixed(2));
              b = "";
              c = "";
 
