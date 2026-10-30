@@ -21,6 +21,13 @@ body {
 
 }
 
+@media (min-width: 800px) {
+  #calcBody {
+    width: 50vw;
+    height: 70vh;
+  }
+}
+
 #screen{
     flex: 0 0 20%;
     display: flex;
